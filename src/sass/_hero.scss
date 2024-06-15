@@ -1,0 +1,89 @@
+
+
+.hero
+{
+    padding: 0 4.2%; 
+
+    &__line 
+     {
+        width: 35%;
+        display: block;
+        margin-left: 40%;
+        margin-bottom: 0.5rem;
+     }
+     
+    &__title
+     {
+        font-size: 2.375rem;
+        font-weight: 400;
+        margin-top: 0;
+     }
+
+     &__body 
+     {
+        letter-spacing: 0.005em;
+     }
+
+     &__btn 
+     {
+        font-size: 1.125rem;
+        font-weight: bold;
+        color: $color-Cream;
+        background-color: $color-DarkBlue;
+        border:none;
+        padding: 1rem 2rem;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: all 300ms;
+
+        &:hover 
+        {
+            background: $color-Gradient1;
+        }
+     }
+
+     &__content 
+     {
+        margin-bottom: 3.43rem;
+     }
+
+     &__img 
+     {
+        &-mobile
+         {
+            display: block;
+            width: 100%;
+         }
+
+         &-desktop
+         {
+            display: none;
+         }
+     }
+
+     &__stats 
+     {
+        text-align: center;
+        padding: 3.5rem 0;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+    }
+
+     &__stat 
+     {
+        &__value 
+        {
+            @extend .heading-l;
+            margin-bottom: 0
+        }
+        &__label 
+        {
+            @extend .heading-s;
+            text-transform: uppercase;
+            letter-spacing: .15em;
+            margin-top: 0;
+        }
+     }
+}

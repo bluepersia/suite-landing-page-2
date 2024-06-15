@@ -1,0 +1,33 @@
+
+
+.header
+ {
+    padding: 1.5rem 4.2% 0;
+    margin-bottom: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__logo
+    {
+        width: 81px;
+    }
+
+    &__btn
+    {
+        padding: .75rem 1rem;
+        border-radius: 6px;
+        background-color: transparent;
+        border:solid 1px $color-DarkBlue;
+        font-weight: bold;
+        font-size: .875rem;
+        cursor: pointer;
+        transition: all 300ms;
+
+        &:hover
+        {
+            background-color: $color-DarkBlue;
+            color: $color-Cream;
+        }
+    }
+ }
