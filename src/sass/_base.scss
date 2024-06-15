@@ -5,11 +5,16 @@ $color-White: #FAF8F6;
 $color-Purple: #A060FF;
 $color-Pink: #CB30E3;
 $color-Orange:#FFA84E;
+$color-Gradient1: linear-gradient(135deg, $color-Purple 0%, $color-Pink 50%, $color-Orange 100%);
 
 body {
     margin: 0;
     background-color: $color-White;
     font-family: "Epilogue", sans-serif;
+}
+p {
+    line-height: 1.6;
+    color: $color-Grey;
 }
 
 * {
@@ -22,4 +27,13 @@ body {
 
 * :last-child{
     margin-bottom: 0;
+}
+
+
+@media (min-width:1440px)
+{
+    html 
+    {
+        font-size: 18px;
+    }
 }
