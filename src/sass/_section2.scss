@@ -1,0 +1,169 @@
+
+
+.section-2 
+{
+    position: relative;
+    background-color: $color-DarkBlue;
+    margin-top: 14.81rem;
+    padding: 16.31rem 4.2% 4rem;
+    border-radius: 15px;
+    color: $color-Cream;
+    text-align: center;
+
+    &__content 
+    {
+        max-width: 573px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+   
+
+    &__img 
+    {
+        &-desktop
+        {
+            display: none;
+        }
+
+        &-mobile
+        {
+            display: block;
+            width: 91%;
+            max-width: 252px;
+            position: absolute;
+            top: -11.3rem;
+            left:50%;
+            transform: translateX(-50%);
+            z-index: 99;
+        }
+
+        &-line 
+        {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50px;
+            height: 40px;
+            margin-bottom: 2.31em;
+        }
+
+        &-blur 
+        {
+            display: none
+        }
+    }
+
+    &__title
+    {
+        @extend .heading-l;
+        color: $color-White;
+        font-weight: 400;
+    }
+
+    &__body 
+    {
+        color: $color-Cream;
+        font-size: 18px;
+        margin-bottom: 2.5rem;
+    }
+
+    &__name
+    {
+        font-size: 18px;
+        text-transform: uppercase;
+        margin-bottom: 0.4rem;
+    }
+
+    &__pos
+    {
+        @extend .heading-s;
+        margin-top: 0;
+        font-weight: normal;
+        font-size: 16px;
+        letter-spacing: .15em;
+    }
+
+}
+
+
+
+@media (min-width:768px)
+{
+    .section-2 
+    {
+        &__img-blur 
+        {
+            position: absolute;
+            display: block;
+            top:0px;
+            left:50%;
+            transform: translate(-50%, -30%);
+            z-index: 0;
+        }
+
+        &__body 
+        {
+            margin-bottom: 2.22rem;
+        }
+    }
+}
+
+
+@media (min-width:1440px)
+{
+    .section-2 
+    {
+        padding:4.88rem 11.4%;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &__content 
+        {
+            margin-left: auto;
+            margin-right: 0;
+            width: 40.1%;
+        
+        }
+
+        &__body 
+        {
+            font-size:1.11rem;
+        }
+
+        &__img 
+        {
+            &-mobile
+            {
+                display: none;
+            }
+            &-desktop
+            {
+                max-width: 375px;
+                display: block;
+                width: 26%;
+                position: absolute;
+                bottom: 0px;
+                left:11.4%;
+                z-index: 99;
+            }
+
+            &-blur 
+            {
+                left:11.4%;
+                transform: translate(-30%, 0%);
+            }
+
+            &-line 
+            {
+            position: absolute;
+            left:50%;
+            transform: translateX(-50%);
+            width: 64px;
+            height: 52px;
+            }
+            
+        }
+    }
+}
