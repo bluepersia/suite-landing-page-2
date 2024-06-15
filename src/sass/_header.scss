@@ -42,9 +42,21 @@
 
         &__btn 
         {
-            font-size: 1rem;
+            font-size: 16px;
             padding-left: 1.5rem;
             padding-right: 1.5rem;
         }
+    }
+}
+
+
+@media (min-width:1440px)
+{
+    .header 
+    {
+        padding: 3.125rem 11.4% 0;
+        margin-bottom: 4.1rem;
+
+        
     }
 }

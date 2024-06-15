@@ -28,3 +28,12 @@ p {
 * :last-child{
     margin-bottom: 0;
 }
+
+
+@media (min-width:1440px)
+{
+    html 
+    {
+        font-size: 18px;
+    }
+}
